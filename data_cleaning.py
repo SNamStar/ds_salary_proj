@@ -57,4 +57,3 @@ df['Power BI'] = df['Job Description'].apply(lambda x: 1 if 'Power BI' in x.lowe
 df['Excel'] = df['Job Description'].apply(lambda x: 1 if 'Excel' in x.lower() else 0)
 
 df.to_csv('salary_data_cleaned.csv')
-pd.read_csv('salary_data_cleaned.csv')
